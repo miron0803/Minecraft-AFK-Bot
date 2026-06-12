@@ -64,3 +64,16 @@ bot.on('error', (err) => {
 bot.on('end', () => {
   console.log('⛔️ Bot Disconnected!');
 });
+
+const http = require('http');
+const port = process.env.PORT || 3000;
+
+const server = http.createServer((req, res) => {
+  res.statusCode = 200;
+  res.setHeader('Content-Type', 'text/plain');
+  res.end('Bot is alive!\n');
+});
+
+server.listen(port, () => {
+  console.log(`Web server running on port ${port}`);
+});
