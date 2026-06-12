@@ -1,6 +1,6 @@
 {
-  "serverHost": "example.aternos.me",
-  "serverPort": 12345,
-  "botUsername": "MyBot",
+  "serverHost": "norvex.ddns.net",
+  "serverPort": 42924,
+  "botUsername": "angolas31",
   "botChunk": 1
 }
